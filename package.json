@@ -1,0 +1,35 @@
+{
+  "name": "web-automation",
+  "version": "1.0.0",
+  "description": "Final task for Web automation using Playwright, TypeScript and CucumberJS",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier --write .",
+    "test": "npx cucumber-js -p runner",
+    "test:tags": "npx cucumber-js -p runner --tags",
+    "report": "npx ts-node ./config/HTMLReporter.ts",
+    "test:generator": "npx playwright codegen  https://www.saucedemo.com/"
+  },
+  "keywords": [
+    "Playwright",
+    "TypeScript",
+    "CucumberJS"
+  ],
+  "author": "Ksenija Ņuščenko",
+  "licence": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.2.0",
+    "@playwright/test": "^1.35.1",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "winston": "^3.9.0"
+  },
+  "dependencies": {
+    "minimat": "^1.1.1",
+    "minimatch": "^9.0.3"
+  }
+}
